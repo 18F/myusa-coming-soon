@@ -56,7 +56,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  background-color: #f2f8fb;
+}
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+}
 
 
 
