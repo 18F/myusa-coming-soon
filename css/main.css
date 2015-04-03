@@ -57,7 +57,7 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #f2f8fb;
+  background-color: #E3EDF3;
   font-family: 'Source Sans Pro';
 }
 
@@ -70,6 +70,11 @@ h1, h2, h3, h4, h5 {
   margin-right: auto;
   width: 33%;
   text-align: center;
+}
+
+.hero {
+  box-shadow: inset 0px 0px 80px 80px #E3EDF3;
+  background-color: #F7F9FA;
 }
 
 /* ==========================================================================
