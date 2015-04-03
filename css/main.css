@@ -91,20 +91,42 @@ html {
   font-family: 'Source Sans Pro';
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
   font-family: 'Raleway';
+  color: #4A4A4A;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 33%;
+  width: 50%;
   text-align: center;
 }
 
+.logo-container {
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
 .hero {
-  box-shadow: inset 0px 0px 80px 80px #E3EDF3;
-  background-color: #F7F9FA;
+  /*box-shadow: inset 0px 0px 80px 80px #E3EDF3;
+  background-color: #F7F9FA;*/
+}
+
+body {
+  background-image: -o-radial-gradient(circle, #F7F9FA, #E3EDF3 150px);
+  background-image: -moz-radial-gradient(circle, #F7F9FA, #E3EDF3 150px);
+  background-image: -webkit-radial-gradient(circle, #F7F9FA, #E3EDF3 150px);
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 250%;
+  font-weight: 900;
+}
+
+p {
+  font-weight: 900;
 }
 
 /* ==========================================================================
@@ -115,11 +137,19 @@ h1, h2, h3, h4, h5 {
   .container {
     width: 66%;
   }
+  .logo-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 500px) {
   .container {
     width: 100%;
+  }
+  .logo-container {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
