@@ -87,7 +87,7 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #E3EDF3;
+  background-color: #EAF3F7;
   font-family: 'Source Sans Pro';
 }
 
@@ -114,9 +114,9 @@ h1, h2, h3, h4, h5, p {
 }
 
 body {
-  background-image: -o-radial-gradient(circle, #F7F9FA, #E3EDF3 150px);
-  background-image: -moz-radial-gradient(circle, #F7F9FA, #E3EDF3 150px);
-  background-image: -webkit-radial-gradient(circle, #F7F9FA, #E3EDF3 150px);
+  background-image: -o-radial-gradient(circle, #F7F9FA, #EAF3F7 150px);
+  background-image: -moz-radial-gradient(circle, #F7F9FA, #EAF3F7 150px);
+  background-image: -webkit-radial-gradient(circle, #F7F9FA, #EAF3F7 150px);
   background-repeat: no-repeat;
 }
 
