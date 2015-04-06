@@ -87,46 +87,44 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #EAF3F7;
   font-family: 'Source Sans Pro';
+  background-color: #F7F9FA;
 }
 
 h1, h2, h3, h4, h5, p {
   font-family: 'Raleway';
-  color: #4A4A4A;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  max-width: 54%;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .logo-container {
-  padding-top: 15%;
-  padding-bottom: 15%;
 }
 
 .hero {
-  /*box-shadow: inset 0px 0px 80px 80px #E3EDF3;
-  background-color: #F7F9FA;*/
-}
-
-body {
-  background-image: -o-radial-gradient(circle, #F7F9FA, #EAF3F7 150px);
-  background-image: -moz-radial-gradient(circle, #F7F9FA, #EAF3F7 150px);
-  background-image: -webkit-radial-gradient(circle, #F7F9FA, #EAF3F7 150px);
-  background-repeat: no-repeat;
+  margin-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #FFFFFF;
+  border: 3px solid #EEF2F4;
+  max-height: 41%;
 }
 
 h1 {
+  /*
   font-size: 250%;
   font-weight: 900;
+  */
 }
 
 p {
-  font-weight: 900;
 }
 
 /* ==========================================================================
