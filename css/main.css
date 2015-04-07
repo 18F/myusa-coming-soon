@@ -91,11 +91,19 @@ h3.wantmoreinfo {
     margin-top: 10px;
     padding-left: 2%;
     padding-right: 2%;
+    padding-bottom: 1%;
     padding-top: 10px;
+    margin-bottom: 1px;
   }
   .container {
     max-width: 85%;
   }
+  /*
+
+  */
+}
+/*
+@media (max-width: 320px) {
   .logo {
     max-width: 200px;
     margin-bottom: 1px;
@@ -107,6 +115,7 @@ h3.wantmoreinfo {
     font-size: 150%;
   }
 }
+*/
 
 @media (max-height: 640px) {
   .hero {
