@@ -1,3 +1,10 @@
+env:
+  - NPM_PATH="`npm config get prefix`/lib/node_modules"
+
+cache:
+  directories:
+  - $NPM_PATH
+
 before_script:
   - npm install -g http-server
   - npm install -g pa11y
