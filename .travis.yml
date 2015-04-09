@@ -1,6 +1,9 @@
 env:
-  - NPM_PATH=unset
   - NPM_PATH="`npm config get prefix`/lib/node_modules"
+
+cache:
+  directories:
+  - $NPM_PATH
 
 before_script:
   - npm install -g http-server
@@ -8,6 +11,5 @@ before_script:
   - npm install -g pa11y-reporter-ci
 
 script: 
-  - echo $NPM_PATH
   - nohup http-server -p 8080 >/dev/null 2>&1 &
   - pa11y localhost:8080/index.html -r ci -s WCAG2AAA
