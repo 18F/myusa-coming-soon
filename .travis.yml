@@ -1,4 +1,5 @@
 env:
+  - NPM_PATH=unset
   - NPM_PATH=`npm config get prefix`/lib/node_modules
 
 before_script:
