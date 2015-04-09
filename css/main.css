@@ -75,6 +75,39 @@ h2, h3, h4, h5 {
   padding: 25px 40px;
 }
 
+form#email_form {
+  margin-bottom: 25px;
+}
+
+input {
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+
+input[type="text"] {
+  border: 1px solid #c9d4d9;
+  width: 300px;
+}
+
+::-webkit-input-placeholder {
+   color: #4a4a4a;
+}
+
+input:-moz-placeholder { 
+   color: #4a4a4a;
+}
+
+:-ms-input-placeholder {  
+  color: #4a4a4a;
+}
+
+input[type="submit"] {
+  background-color: #0069a0;
+  border: 1px solid #0069a0;
+  color: #FFFFFF;
+  margin-left: 5px;
+}
+
 p.subhead {
   font-size: 18px;
   font-weight: 700;
@@ -114,6 +147,14 @@ p.subhead {
 
   .bottom {
     padding: 20px 40px;
+  }
+
+  input[type="text"] {
+    width: 200px;
+  }
+
+  input[type="submit"] {
+    margin: 15px 0 0 0;
   }
 
 }
