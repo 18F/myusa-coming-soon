@@ -75,7 +75,7 @@ h2, h3, h4, h5 {
   padding: 25px 40px;
 }
 
-form#email_form {
+form#mc-embedded-subscribe-form {
   margin-bottom: 25px;
 }
 
@@ -84,7 +84,7 @@ input {
   border-radius: 3px;
 }
 
-input[type="text"] {
+input[type="email"] {
   border: 1px solid #c9d4d9;
   width: 300px;
 }
