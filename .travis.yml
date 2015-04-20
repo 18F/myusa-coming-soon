@@ -1,15 +1,19 @@
-env:
-  - NPM_PATH="`npm config get prefix`/lib/node_modules"
-
-cache:
-  directories:
-  - $NPM_PATH
-
 before_script:
-  - npm install -g http-server
-  - npm install -g pa11y
-  - npm install -g pa11y-reporter-ci
+- npm i -g http-server pa11y pa11y-reporter-ci
+- 
+script:
+- nohup http-server -p 8080 >/dev/null 2>&1 &
+- pa11y localhost:8080/index.html -r ci -s WCAG2AAA
 
-script: 
-  - nohup http-server -p 8080 >/dev/null 2>&1 &
-  - pa11y localhost:8080/index.html -r ci -s WCAG2AAA
+deploy:
+  provider:
+    provider: cloudfoundry
+  api: https://api.cf.18f.us
+  username: myusa_deployer
+  password:
+    secure: IxoeD0CHvRmi2Q0JJnu4NrmYrcQRqQDGHmrKxbnyfyVJiaJ1mfVWZO/Q9Vwwpb3lFn2ZWpMB2Tfe063XMAK8p3BSeGlHgZpFlBj9efpvSWvHTu1mnHVGU6abz5e1wOlj5QHoPQR9exm9lsMris9ZBPSm/W6FNEf4/8/Q2CZzrGM=
+  organization: myusa
+  space: production
+  on:
+    repo: 18F/myusa-coming-soon
+    branch: master
