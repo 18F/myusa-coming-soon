@@ -1,9 +1,11 @@
+sudo: true
+
 before_script:
-- npm i -g http-server pa11y pa11y-reporter-ci
-- 
+  - npm i -g http-server pa11y pa11y-reporter-ci
+
 script:
-- nohup http-server -p 8080 >/dev/null 2>&1 &
-- pa11y localhost:8080/index.html -r ci -s WCAG2AAA
+  - nohup http-server -p 8080 >/dev/null 2>&1 &
+  - pa11y localhost:8080/index.html -r ci -s WCAG2AAA
 
 deploy:
   provider: cloudfoundry
