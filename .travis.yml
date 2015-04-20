@@ -6,8 +6,7 @@ script:
 - pa11y localhost:8080/index.html -r ci -s WCAG2AAA
 
 deploy:
-  provider:
-    provider: cloudfoundry
+  provider: cloudfoundry
   edge: true
   api: https://api.cf.18f.us
   username: myusa_deployer
