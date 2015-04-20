@@ -8,6 +8,7 @@ script:
 deploy:
   provider:
     provider: cloudfoundry
+  edge: true
   api: https://api.cf.18f.us
   username: myusa_deployer
   password:
