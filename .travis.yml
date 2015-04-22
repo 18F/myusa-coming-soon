@@ -10,7 +10,7 @@ script:
 deploy:
   provider: cloudfoundry
   edge: true
-  api: https://api.cf.18f.us
+  api: https://api.18f.gov
   username: myusa_deployer
   password:
     secure: IxoeD0CHvRmi2Q0JJnu4NrmYrcQRqQDGHmrKxbnyfyVJiaJ1mfVWZO/Q9Vwwpb3lFn2ZWpMB2Tfe063XMAK8p3BSeGlHgZpFlBj9efpvSWvHTu1mnHVGU6abz5e1wOlj5QHoPQR9exm9lsMris9ZBPSm/W6FNEf4/8/Q2CZzrGM=
