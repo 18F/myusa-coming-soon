@@ -14,6 +14,6 @@ python3 -m http.server
 
 ## Deployment
 
-We're using Cloud Foundry. If you're in 18F, and have questions about deployment, ask someone in DevOps.
+We're using Cloud Foundry. Any commits to `master` will be deployed.
 
-If you're not in 18F, you can deploy this however you like. It's just a static site.
+If you're not in 18F, you can deploy your own instance however you like. It's just a static site.
